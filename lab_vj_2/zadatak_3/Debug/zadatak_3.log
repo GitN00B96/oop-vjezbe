@@ -1,0 +1,6 @@
+﻿  zadatak_3.cpp
+C:\Users\Mario\Desktop\oop lab_vj\lab_vj_2\lab_vj_2\zadatak_3\zadatak_3.cpp(30,19): warning C4804: '<=': unsafe use of type 'bool' in operation
+C:\Users\Mario\Desktop\oop lab_vj\lab_vj_2\lab_vj_2\zadatak_3\zadatak_3.cpp(35,19): warning C4804: '<=': unsafe use of type 'bool' in operation
+C:\Users\Mario\Desktop\oop lab_vj\lab_vj_2\lab_vj_2\zadatak_3\zadatak_3.cpp(40,19): warning C4804: '<=': unsafe use of type 'bool' in operation
+C:\Users\Mario\Desktop\oop lab_vj\lab_vj_2\lab_vj_2\zadatak_3\zadatak_3.cpp(45,19): warning C4804: '<=': unsafe use of type 'bool' in operation
+  zadatak_3.vcxproj -> C:\Users\Mario\Desktop\oop lab_vj\lab_vj_2\lab_vj_2\Debug\zadatak_3.exe
