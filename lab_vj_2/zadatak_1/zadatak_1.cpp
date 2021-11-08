@@ -3,14 +3,14 @@
 
 //. Napisati funkciju koja računa najveći i najmanji broj u nizu od n prirodnih
 //brojeva.Funkcija vraća tražene brojeve pomoću referenci.
-void find_arr_min_max(int arr[], int l, int* max, int* min)
+void find_arr_min_max(int arr[], int l, int& max, int& min)
 {
 	int i(0);
 	for (i; i < l; ++i) {
-		if (arr[i] > *max)
-			*max = arr[i];
-		if (arr[i] < *min)
-			*min = arr[i];
+		if (arr[i] > max)
+			max = arr[i];
+		if (arr[i] < min)
+			min = arr[i];
 	}
 }
 int main() {
