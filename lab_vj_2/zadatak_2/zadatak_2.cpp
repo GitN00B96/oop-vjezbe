@@ -1,10 +1,10 @@
-﻿#include<iostream>
+#include<iostream>
 //2. Napisati funkciju koja vraća referencu na neki element niza.Koristeći po -
 //vratnu vrijednost funkcije kao lvalue uvećajte i - ti element niza za jedan.
 
 
-int* return_reference(int* arr, int n) {
-	return &arr[n];
+int& return_reference(int* arr, int n) {
+	return arr[n];
 }
 
 
@@ -25,24 +25,9 @@ int main() {
 		std::cout << "Element[" << i << "]:";
 		std::cin >> array[i];
 	}
-	int* a = return_reference(array, n);								 //to je lvalue ?
-	std::cout << "Function returned reference: " << a << std::endl;
+	return_reference(array, n)++;								 
 
-	std::cout << "Array before adding one to an n-th element" << std::endl;
-	for (int j = 0; j < arr_len; j++) {
-		std::cout << array[j] << "\t";
-	}
-
-	*a += 1;														// sada ga koristim kao lvalue?
-
-	std::cout << "\nArray after adding one to an n-th element" << std::endl;
-	for (int j = 0; j < arr_len; j++) {
-		std::cout << array[j] << "\t";
-	}
 	delete[]array;
 	return 0;
 }
-
-
-
 
